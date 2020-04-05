@@ -31,7 +31,6 @@
         mdi-close
       </v-icon>
 
-      <!--
       <nav class="SideNavigation-Menu">
         <MenuList :items="items" @click="$emit('closeNavi', $event)" />
         <div
@@ -44,7 +43,6 @@
           <LanguageSelector />
         </div>
       </nav>
-      -->
 
       <footer class="SideNavigation-Footer">
         <div class="SideNavigation-Social">

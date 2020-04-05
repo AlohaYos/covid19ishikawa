@@ -16,7 +16,7 @@
       </div>
       <div class="Flow-Card-Button-Wrapper mt-6">
         <a
-          href="https://www.fukushihoken.metro.tokyo.lg.jp/iryo/kansen/coronasodan.html"
+          href="https://www.pref.ishikawa.lg.jp/kansen/corona.html"
           target="_blank"
           rel="noopener"
           class="Flow-Card-Button"

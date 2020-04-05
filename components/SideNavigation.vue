@@ -33,6 +33,7 @@
 
       <nav class="SideNavigation-Menu">
         <MenuList :items="items" @click="$emit('closeNavi', $event)" />
+        <!--
         <div
           v-if="this.$i18n.locales.length > 1"
           class="SideNavigation-Language"
@@ -42,41 +43,18 @@
           </label>
           <LanguageSelector />
         </div>
+        -->
       </nav>
 
       <footer class="SideNavigation-Footer">
         <div class="SideNavigation-Social">
           <a
-            href="https://line.me/R/ti/p/%40822sysfc"
-            target="_blank"
-            rel="noopener"
-            class="SideNavigation-SocialLink"
-          >
-            <img src="/line.png" alt="LINE" />
-          </a>
-          <a
-            href="https://twitter.com/tokyo_bousai"
+            href="http://www.pref.ishikawa.lg.jp/kansen/coronataisakuhonbu.html"
             target="_blank"
             rel="noopener"
             class="SideNavigation-SocialLink"
           >
             <img src="/twitter.png" alt="Twitter" />
-          </a>
-          <a
-            href="https://www.facebook.com/tochokoho"
-            target="_blank"
-            rel="noopener"
-            class="SideNavigation-SocialLink"
-          >
-            <img src="/facebook.png" alt="Facebook" />
-          </a>
-          <a
-            href="https://github.com/tokyo-metropolitan-gov/covid19"
-            target="_blank"
-            rel="noopener"
-            class="SideNavigation-SocialLink"
-          >
-            <img src="/github.png" alt="GitHub" />
           </a>
         </div>
         <small class="SideNavigation-Copyright">
@@ -144,28 +122,28 @@ export default Vue.extend({
         {
           icon: 'mdi-account-multiple',
           title: this.$t('県民の皆様へ'),
-          link: 'https://www.metro.tokyo.lg.jp/tosei/tosei/news/2019-ncov.html'
+          link: 'https://www.pref.ishikawa.lg.jp/kansen/corona.html'
         },
         {
           icon: 'mdi-domain',
           title: this.$t('企業の皆様・はたらく皆様へ'),
-          link: this.localePath('/worker'),
+          link: 'https://www.pref.ishikawa.lg.jp/kinyuu/kinyuu/korona.html',
           divider: true
         },
         {
-          title: this.$t('石川県新型コロナウイルス感染症対策本部報'),
+          title: this.$t('石川県新型コロナウイルス感染症対策本部会議'),
           link:
-            'https://www.bousai.metro.tokyo.lg.jp/taisaku/saigai/1007261/index.html'
+            'https://www.pref.ishikawa.lg.jp/kansen/coronataisakuhonbu.html'
         },
         {
           title: this.$t('石川県主催等 中止又は延期するイベント等'),
           link:
-            'https://www.seisakukikaku.metro.tokyo.lg.jp/information/event00.html'
+            'https://www.pref.ishikawa.lg.jp/kenmin/kouhou/eventcancel.html'
         },
         {
           title: this.$t('知事からのメッセージ'),
           link:
-            'https://www.metro.tokyo.lg.jp/tosei/governor/governor/katsudo/2020/03/03_00.html'
+            'https://www.pref.ishikawa.lg.jp/chiji/kisya/r2/index.html'
         },
         {
           title: this.$t('当サイトについて'),
@@ -177,7 +155,7 @@ export default Vue.extend({
         },
         {
           title: this.$t('石川県公式ホームページ'),
-          link: 'https://www.metro.tokyo.lg.jp/'
+          link: 'https://www.pref.ishikawa.lg.jp/'
         }
       ]
     }

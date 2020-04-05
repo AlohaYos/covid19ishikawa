@@ -39,10 +39,10 @@
         <li>
           {{ $t('「新型コロナウイルス感染症にかかる相談窓口について」') }}<br />
           <a
-            href="https://www.fukushihoken.metro.tokyo.lg.jp/iryo/kansen/coronasodan.html"
+            href="https://www.pref.ishikawa.lg.jp/kansen/corona.html"
             target="_blank"
             rel="noopener"
-            >https://www.fukushihoken.metro.tokyo.lg.jp/iryo/kansen/coronasodan.html</a
+            >https://www.pref.ishikawa.lg.jp/kansen/corona.html</a
           >
         </li>
       </ul>

@@ -196,13 +196,13 @@ const options: ThisTypedComponentOptionsWithRecordProps<
         tooltips: {
           displayColors: false,
           callbacks: {
-            label(tooltipItem:any) {
+            label(tooltipItem: any) {
               const labelText = `${parseInt(
                 tooltipItem.value
               ).toLocaleString()} ${unit}`
               return labelText
             },
-            title(tooltipItem:any, data:any) {
+            title(tooltipItem: any, data: any) {
               return data.labels[tooltipItem[0].index]
             }
           }
@@ -292,7 +292,7 @@ const options: ThisTypedComponentOptionsWithRecordProps<
         }
       }
       if (this.$route.query.ogp === 'true') {
-        Object.assign(options, {animation:{duration: 0}})
+        Object.assign(options, { animation: { duration: 0 } })
       }
       return options
     },

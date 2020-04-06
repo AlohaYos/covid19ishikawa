@@ -79,7 +79,7 @@
 <script lang="ts">
 import Vue from 'vue'
 import { TranslateResult } from 'vue-i18n'
-import LanguageSelector from '@/components/LanguageSelector.vue'
+/* import LanguageSelector from '@/components/LanguageSelector.vue' */
 import MenuList from '@/components/MenuList.vue'
 
 type Item = {
@@ -91,7 +91,7 @@ type Item = {
 
 export default Vue.extend({
   components: {
-    LanguageSelector,
+    /* LanguageSelector, */
     MenuList
   },
   props: {
@@ -132,18 +132,15 @@ export default Vue.extend({
         },
         {
           title: this.$t('石川県新型コロナウイルス感染症対策本部会議'),
-          link:
-            'https://www.pref.ishikawa.lg.jp/kansen/coronataisakuhonbu.html'
+          link: 'https://www.pref.ishikawa.lg.jp/kansen/coronataisakuhonbu.html'
         },
         {
           title: this.$t('石川県主催等 中止又は延期するイベント等'),
-          link:
-            'https://www.pref.ishikawa.lg.jp/kenmin/kouhou/eventcancel.html'
+          link: 'https://www.pref.ishikawa.lg.jp/kenmin/kouhou/eventcancel.html'
         },
         {
           title: this.$t('知事からのメッセージ'),
-          link:
-            'https://www.pref.ishikawa.lg.jp/chiji/kisya/r2/index.html'
+          link: 'https://www.pref.ishikawa.lg.jp/chiji/kisya/r2/index.html'
         },
         {
           title: this.$t('当サイトについて'),
